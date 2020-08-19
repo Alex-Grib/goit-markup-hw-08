@@ -1,0 +1,139 @@
+.address-map {
+  display: inline-block;
+  margin-top: 20px;
+  padding-bottom: 9px;
+
+  color: $primary-white-color;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.address-info {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  transition: color 250ms $timing-function;
+
+  &:not(:last-child) {
+    padding-bottom: 9px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.sign-up {
+  display: block;
+  margin-bottom: 20px;
+  color: $primary-white-color;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.subscription {
+  display: flex;
+  flex-direction: column;
+  width: 580px;
+  margin-left: 45px;
+}
+.footer-form {
+  display: flex;
+}
+.footer-input-email {
+  padding: 18px 12px;
+  margin-right: 12px;
+  height: 50px;
+  min-width: 358px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: $primary-white-color;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-footer {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  border: none;
+  margin: 0;
+  padding: 10px 29px;
+  border-radius: 4px;
+  background-color: $accent-color;
+  color: $primary-white-color;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  transition: background-color 250ms $timing-function,
+    color 250ms $timing-function;
+  overflow: hidden;
+
+  &:hover,
+  &:focus {
+    background-color: $primary-white-color;
+    color: $accent-color;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    background-size: contain;
+    transition: transform 250ms $timing-function;
+  }
+
+  &::after {
+    background-image: url(../images/telegram-svg/telegram-svg.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &:hover::after {
+    transform: translateY(-40px);
+  }
+
+  &::before {
+    position: absolute;
+    right: 0;
+    margin-right: 28px;
+    background-image: url(../images/what-are-we-doing/telegram-svg.svg);
+    transform: translateY(35px);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    transform: translateY(0px);
+  }
+}

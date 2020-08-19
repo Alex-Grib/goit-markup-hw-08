@@ -1,0 +1,39 @@
+.services {
+  padding-top: 94px;
+}
+
+.services-list {
+  display: flex;
+}
+
+.services-tittle {
+  margin-bottom: 10px;
+  margin-top: 30px;
+
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.services-text {
+  color: $primary-text-color;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.services-icon:not(:last-child) {
+  margin-right: 30px;
+}
+
+.services-svg {
+  width: 270px;
+  height: 120px;
+  text-align: center;
+  padding-top: 24px;
+
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}

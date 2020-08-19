@@ -1,0 +1,29 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $fotter-bcg-color;
+}
+
+.footer-list {
+  display: flex;
+  align-items: baseline;
+}
+.footer-logotype {
+  width: 300px;
+}
+.footer-list-second {
+  display: block;
+  justify-content: center;
+  margin-left: 69px;
+  width: 300px;
+}
+
+/* Логотип футер */
+
+.logo-footer {
+  color: white;
+}
+
+.footer-social {
+  display: flex;
+}

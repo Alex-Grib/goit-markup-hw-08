@@ -1,0 +1,23 @@
+.logo-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  background-repeat: no-repeat;
+  background-position: center;
+
+  transition: background-color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.logo-social-icon {
+  fill: $primary-white-color;
+}
