@@ -58,10 +58,6 @@
     color: $accent-color;
   }
 
-  &:not(:last-child) {
-    margin-bottom: 16px;
-  }
-
   .address-list-svg {
     transition: 250ms $timing-function;
   }
@@ -138,6 +134,9 @@
   .menu-wrapper.is-open {
     display: block;
   }
+  .address-list:not(:last-child) {
+    margin-bottom: 16px;
+  }
 }
 
 // Стили для Планшета
@@ -189,5 +188,20 @@
   .address-list {
     font-size: 12px;
     line-height: 1.16;
+  }
+  .address-list:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and(min-width:1200px) {
+  .address {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .address-list:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 0px;
   }
 }
