@@ -457,21 +457,42 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .logo {
+    margin-right: 81px;
+    font-size: 23px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
   .menu-btn {
     display: none;
   }
   .menu-wrapper {
     display: flex;
   }
-  .nav-list {
+  .navigation {
     display: flex;
     align-items: center;
+    margin-right: 84px;
+  }
+  .nav-list {
+    display: flex;
+  }
+  .nav-list-item:not(:last-child) {
+    margin-right: 50px;
   }
   .nav-list-link {
     font-weight: 500;
     font-size: 14px;
-    line-height: 1, 14;
+    line-height: 1.14;
     letter-spacing: 0.02em;
+  }
+  .address {
+    display: grid;
   }
   .address-list {
     font-size: 12px;
