@@ -1,9 +1,9 @@
 .clients-list {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
 }
 .clients-list-item {
-  width: 170px;
+  // width: 170px;
 
   &:not(:last-child) {
     margin-right: 30px;
@@ -11,10 +11,10 @@
 }
 
 .client-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // width: 100%;
   height: 90px;
   color: #afb1b8;
   border: 1px solid #afb1b8;
