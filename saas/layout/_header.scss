@@ -1,7 +1,7 @@
 .header {
+  position: relative;
   padding-top: 16px;
   padding-bottom: 16px;
-  position: relative;
 }
 .header-container {
   display: flex;
@@ -147,6 +147,7 @@
     display: flex;
     align-items: center;
     justify-content: start;
+    min-height: 80px;
   }
 
   .logo {
@@ -196,6 +197,10 @@
 }
 
 @media screen and(min-width:1200px) {
+  .header {
+    display: flex;
+    align-items: center;
+  }
   .address {
     display: flex;
     align-items: center;
@@ -204,5 +209,11 @@
   .address-list:not(:last-child) {
     margin-right: 30px;
     margin-bottom: 0px;
+  }
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    min-height: 80px;
   }
 }
