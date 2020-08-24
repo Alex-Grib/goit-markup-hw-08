@@ -81,7 +81,7 @@ body {
 
 .modal {
   position: absolute;
-  max-width: 528px;
+  max-width: 450px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -122,7 +122,6 @@ body {
 
 .form-field-backdrop {
   position: relative;
-  width: 448px;
   height: 40px;
   margin-bottom: 28px;
   background-color: transparent;
@@ -189,7 +188,6 @@ body {
 .textarea-box {
   position: relative;
   margin-bottom: 20px;
-  width: 448px;
   height: 120px;
 }
 
@@ -312,6 +310,12 @@ body {
   background-color: #ffffff;
   color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (min-width: 1280px) {
+  .modal {
+    max-width: 528px;
+  }
 }
 
 .section-tittle {
@@ -527,7 +531,7 @@ body {
 
 .hero {
   min-height: 400px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../../images/hero-img/hero-mobile.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero-img/hero-mobile.jpg);
   background-color: #2f303a;
   margin-right: auto;
   margin-left: auto;
@@ -557,25 +561,25 @@ body {
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-width: 320px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../../images/hero-img/hero-mobile@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero-img/hero-mobile@2x.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../../images/hero-img/hero-tablet.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero-img/hero-tablet.jpg);
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../../images/hero-img/hero-tablet@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero-img/hero-tablet@2x.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../../images/hero-img/desktop.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero-img/desktop.jpg);
   }
   .hero-tittle {
     font-size: 44px;
