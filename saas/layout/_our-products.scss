@@ -1,5 +1,8 @@
 .work-list {
-  // display: flex;
+  display: flex;
+}
+.work {
+  display: none;
 }
 
 .work-tittle-text {
@@ -7,6 +10,8 @@
   bottom: 0;
   padding-top: 27px;
   padding-bottom: 27px;
+  min-width: 100%;
+  min-height: 70px;
   // width: 100%;
 
   color: $primary-white-color;
@@ -29,4 +34,10 @@
 
 .work-picture {
   // display: block;
+}
+
+@media screen and (min-width: 1200px) {
+  .work {
+    display: block;
+  }
 }

@@ -1,7 +1,9 @@
 .services {
   padding-top: 94px;
 }
-
+.services-icon {
+  max-width: 450px;
+}
 .services-tittle {
   margin-bottom: 10px;
   margin-top: 30px;
@@ -21,8 +23,6 @@
 }
 
 .services-svg {
-  // width: 270px;
-  min-width: 450px;
   height: 120px;
   text-align: center;
   padding-top: 24px;
@@ -30,25 +30,33 @@
   background-color: #f5f4fa;
   border-radius: 4px;
 }
-// @media screen and (max-width: 767px) {
-//   .services-icon:not(:last-child) {
-//     margin-bottom: 30px;
-//   }
-// }
-// @media screen and (min-width: 768px) {
-//   .services-icon {
-//     flex-basis: calc((100% - 4 * 15px) / 2);
-//     margin: 15px;
-//   }
-// }
-// @media screen and (min-width: 1280px) {
-//   .services-icon {
-//     margin-top: 0;
-//     margin-bottom: 0;
-//     margin-left: 0;
-//     margin-right: 30px;
-//   }
-//   .services-svg {
-//     min-width: 270px;
-//   }
-// }
+
+@media screen and (min-width: 768px) {
+  .services-icon {
+    flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+  .services-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -30px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .services-icon {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 30px;
+    &:last-child {
+      margin: 0;
+    }
+  }
+  .services-list {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
+  }
+}
