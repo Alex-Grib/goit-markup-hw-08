@@ -62,26 +62,28 @@ body {
   padding-bottom: 94px;
 }
 
-/* Оформление модального окнa */
 .backdrop {
   position: fixed;
+  overflow-y: scroll;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 0.1);
-  z-index: 1;
+  z-index: 5;
 }
 
 .is-hidden {
   opacity: 0;
   pointer-events: none;
+  overflow-y: scroll;
 }
 
+/* Оформление модального окнa */
 .modal {
   position: absolute;
-  max-width: 450px;
+  min-width: 450px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -89,6 +91,10 @@ body {
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+.container .main {
+  text-align: center;
 }
 
 .button-modal-close {
@@ -188,6 +194,7 @@ body {
 .textarea-box {
   position: relative;
   margin-bottom: 20px;
+  width: 448px;
   height: 120px;
 }
 
@@ -293,7 +300,6 @@ body {
   display: inline-block;
   min-width: 200px;
   min-height: 50px;
-  margin-left: 119px;
   border-radius: 4px;
   font-size: 16px;
   font-weight: 700;
@@ -312,9 +318,24 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+@media screen and (min-width: 768px) {
+  .modal {
+    min-width: 450px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 450px;
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .modal {
     max-width: 528px;
+    width: 100%;
+  }
+  .button-modal-push {
+    margin-left: 119px;
   }
 }
 
@@ -449,7 +470,7 @@ body {
     text-align: center;
     background: #ffffff;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-    z-index: 9;
+    z-index: 3;
   }
   .menu-wrapper.is-open {
     display: block;
@@ -602,6 +623,7 @@ body {
 .services-tittle {
   margin-bottom: 10px;
   margin-top: 30px;
+  text-align: center;
   color: #212121;
   font-weight: 700;
   font-size: 14px;
@@ -616,11 +638,8 @@ body {
   line-height: 1.71;
 }
 
-.services-icon:not(:last-child) {
-  margin-right: 30px;
-}
-
 .services-svg {
+  min-width: 450px;
   height: 120px;
   text-align: center;
   padding-top: 24px;
