@@ -8,47 +8,73 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- Шапка сайта -->
     <header class="header">
-      <div class="container">
-        <nav class="navigation">
-          <a href="index.html" class="logo link"
-            ><span class="logo-web">Web</span>
-            <span class="logo-studio">Studio</span>
-          </a>
-          <ul class="nav-list list">
-            <li class="nav-list-item">
-              <a href="./index.html" class="nav-list-link link">Студия</a>
-            </li>
-            <li class="nav-list-item">
-              <a href="./portfolio.html" class="nav-list-link link studio"
-                >Портфолио</a
+      <div class="container header-container">
+        <a href="index.html" class="logo link"
+          ><span class="logo-web">Web</span>
+          <span class="logo-studio">Studio</span>
+        </a>
+        <button
+          type="button"
+          class="menu-btn"
+          aria-expanded="false"
+          aria-controls="menu-wrapper"
+          data-menu-button
+        >
+          <svg width="40" height="40">
+            <use
+              class="icon-open"
+              href="./images/menu-open-close.svg#icon-menu-open"
+            ></use>
+            <use
+              class="icon-close"
+              href="./images/menu-open-close.svg#icon-menu-close"
+            ></use>
+          </svg>
+        </button>
+        <div class="menu-wrapper" data-menu>
+          <nav class="navigation">
+            <ul class="nav-list list">
+              <li class="nav-list-item">
+                <a href="./index.html" class="nav-list-link link studio"
+                  >Студия</a
+                >
+              </li>
+              <li class="nav-list-item">
+                <a href="./portfolio.html" class="nav-list-link link"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="nav-list-item">
+                <a href="#" class="nav-list-link link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-address">
+            <address class="address">
+              <a class="address-list" href="mailto:info@devstudio.com"
+                ><svg class="address-list-svg" width="16px" height="11px">
+                  <use href="./images/sprite.svg#icon-email"></use>
+                </svg>
+                info@devstudio.com</a
               >
-            </li>
-            <li class="nav-list-item">
-              <a href="#" class="nav-list-link link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header-address">
-          <address class="address">
-            <a class="address-list" href="mailto:info@devstudio.com"
-              ><svg class="address-list-svg" width="16px" height="11px">
-                <use href="./images/sprite.svg#icon-email"></use>
-              </svg>
-              info@devstudio.com</a
-            >
 
-            <a class="address-list" href="tel:+380961111111"
-              ><svg class="address-list-svg" width="10px" height="15px">
-                <use href="./images/sprite.svg#icon-phone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </address>
+              <a class="address-list" href="tel:+380961111111"
+                ><svg class="address-list-svg" width="10px" height="15px">
+                  <use href="./images/sprite.svg#icon-phone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </address>
+          </div>
         </div>
       </div>
     </header>
