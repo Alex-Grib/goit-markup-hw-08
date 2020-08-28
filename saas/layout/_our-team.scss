@@ -84,6 +84,9 @@
   .team-card:not(:last-child) {
     margin-bottom: 30px;
   }
+  .team-list {
+    padding-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -92,7 +95,7 @@
     flex-wrap: wrap;
     margin: -30px;
     padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: 60px;
   }
   .team-card {
     flex-basis: calc((100% - 4 * 15px) / 2);

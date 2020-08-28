@@ -344,6 +344,7 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  padding-top: 60px;
 }
 
 .header {
@@ -645,7 +646,10 @@ body {
 
 @media screen and (max-width: 767px) {
   .services-text {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
+  }
+  .services-list {
+    padding-top: 94px;
   }
 }
 
@@ -688,12 +692,6 @@ body {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .services-list {
-    padding-top: 94px;
-  }
-}
-
 .work-list {
   display: flex;
 }
@@ -729,6 +727,7 @@ body {
 @media screen and (min-width: 1200px) {
   .work {
     display: block;
+    padding-bottom: 94px;
   }
 }
 
@@ -817,6 +816,9 @@ body {
   .team-card:not(:last-child) {
     margin-bottom: 30px;
   }
+  .team-list {
+    padding-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -825,7 +827,7 @@ body {
     flex-wrap: wrap;
     margin: -30px;
     padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: 60px;
   }
   .team-card {
     flex-basis: calc((100% - 4 * 15px) / 2);
@@ -959,7 +961,6 @@ body {
     display: flex;
     align-items: baseline;
     justify-content: center;
-    padding-top: 60px;
     margin-bottom: 60px;
   }
   .footer-logotype {
